@@ -2,7 +2,7 @@
 
 Dashboard Theme by BlackTie.co [Demo](http://www.blacktie.co/demo/dashgum/) [Homepage](http://blacktie.co/2014/07/dashgum-free-dashboard/)
 
-
+![Screenshot](_doc/dashgum700.png)
 
 
 
