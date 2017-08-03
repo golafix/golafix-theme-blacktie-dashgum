@@ -1,0 +1,20 @@
+version: "1"
+bind: "yml.dashgum"
+
+var.dashgum:
+  title: "Dashgum Title."
+
+
+var.sidebar.navigation:
+  - icon: "fa-home"
+    name: "Go Home"
+    childs:
+      - icon: "fa-none"
+        name: "Show me more"
+
+
+tpl.site.footer: tpl/tpl.site.footer.html
+tpl.site: tpl/tpl.site.html
+tpl.site.sidebar: tpl/tpl.site.sidebar.html
+tpl.site.topheader: tpl/tpl.site.topheader.html
+
