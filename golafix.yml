@@ -1,9 +1,18 @@
 version: "1"
 bind: "yml.dashgum"
 
-var.dashgum:
-  title: "Dashgum Title."
+var.dashgum.title: "Dashgum Title."
+var.dashgum.author: "Dashgum Author."
+var.dashgum.author: "Dashgum Author."
 
+authentication:
+  static:
+    - matthes:$sha1$:admin,user
+
+
+languages:
+  - de: Deutsch
+  - en: English
 
 var.sidebar.navigation:
   - icon: "fa-home"
@@ -13,8 +22,23 @@ var.sidebar.navigation:
         name: "Show me more"
 
 
-tpl.site.footer: tpl/tpl.site.footer.html
-tpl.site: tpl/tpl.site.html
-tpl.site.sidebar: tpl/tpl.site.sidebar.html
-tpl.site.topheader: tpl/tpl.site.topheader.html
+tpl.site.footer: @tpl/tpl.site.footer.html
+tpl.site: @tpl/tpl.site.html
+tpl.site.sidebar: @tpl/tpl.site.sidebar.html
+tpl.site.topheader: @tpl/tpl.site.topheader.html
+
+router:
+  "login": tpl.site.login
+  "POST@login": api.doLogin
+  "": tpl.site.dashboard
+  "about": @pages/about.html
+
+event.on_load:
+  -
+
+router-acl:
+  __login_route: "/login/%ORIG_ROUTE%"
+  __access_denied_route: "E403"
+  "login": anonymous
+  "*": user
 
