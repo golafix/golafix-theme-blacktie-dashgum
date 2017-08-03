@@ -1,4 +1,13 @@
 version: "1"
 
+
+var.sidebar.navigation:
+  - icon: "fa-home"
+    name: "Go Home"
+    childs:
+      - icon: "fa-none"
+        name: "Show me more"
+
+
 template:
   load
