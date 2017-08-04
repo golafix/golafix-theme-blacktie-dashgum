@@ -1,0 +1,17 @@
+{
+    "name": "gismo/theme-blacktie-dashgum",
+    "type": "library",
+    "description": "Gismo dashboard theme",
+    "keywords": ["Gismo", "html theme"],
+    "homepage": "https://getgismo.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Leuffen",
+            "email": "matthes@leuffen.de"
+        }
+    ],
+    "require": {
+    },
+    "minimum-stability": "dev"
+}

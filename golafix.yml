@@ -1,9 +1,16 @@
 version: "1"
 bind: "yml.dashgum"
 
+extends:
+  - https://github.com/wurst/projekt
+
 var.dashgum.title: "Dashgum Title."
 var.dashgum.author: "Dashgum Author."
-var.dashgum.author: "Dashgum Author."
+
+
+
+
+
 
 authentication:
   static:
@@ -14,7 +21,7 @@ languages:
   - de: Deutsch
   - en: English
 
-var.sidebar.navigation:
+const.sidebar.navigation:
   - icon: "fa-home"
     name: "Go Home"
     childs:
