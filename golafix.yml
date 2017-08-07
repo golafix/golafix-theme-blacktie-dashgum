@@ -40,8 +40,6 @@ router:
   "": tpl.site.dashboard
   "about": @pages/about.html
 
-event.on_load:
-  -
 
 router-acl:
   __login_route: "/login/%ORIG_ROUTE%"

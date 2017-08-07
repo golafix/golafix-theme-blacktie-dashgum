@@ -1,0 +1,29 @@
+
+
+const.dashgum:
+  title: "Dashgum title"
+  author: "Some author"
+  description: "Some description"
+  keyword: "Some keywords"
+  name: "Name of System"
+  copyright: "2017 - Some company"
+
+const.sidebar.navi:
+  - icon: "fa-home"
+    name: "Go Home"
+    link: ""
+    childs:
+      - icon: "fa-none"
+        name: "Show me more"
+        link: "#somewhat"
+
+tpl.site.footer: "tpl/@@.html"
+tpl.site.htmlheadbody: "tpl/@@.html"
+tpl.site: "tpl/@@.html"
+tpl.site.sidebar: "tpl/@@.html"
+tpl.site.topheader: "tpl/@@.html"
+
+tpl.page.login: "tpl/@@.html"
+
+route:
+  "/login": tpl.page.login

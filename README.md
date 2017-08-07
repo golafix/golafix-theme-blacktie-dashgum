@@ -11,6 +11,11 @@ Dashboard Theme by BlackTie.co: [Demo](http://www.blacktie.co/demo/dashgum/) | [
 
 
 
+## Install
+
+
+
+
 ## Credits
 
 This Theme is a fork from [BlackTie](http://blacktie.co)'s free Dashboard

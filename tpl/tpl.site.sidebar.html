@@ -1,11 +1,13 @@
 <aside>
-    <call:var.sidebar.navi as="navi"></call:var.sidebar.navi>
+    <call:const.sidebar.navi as="navi"></call:const.sidebar.navi>
     <div id="sidebar"  class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
 
+            <!--
             <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
             <h5 class="centered">Marcel Newman</h5>
+            -->
 
             <li class="mt">
                 <a href="index.html">
@@ -15,12 +17,12 @@
             </li>
 
             <li go-foreach="navi as category" class="sub-menu">
-                <a href="javascript:;" >
+                <a href="{{ category.link == '' ? 'javascript:;' : link(category.link) }}" >
                     <i class="fa {{ category.icon }}"></i>
-                    <span>{{ category.icon }}</span>
+                    <span>{{ category.name }}</span>
                 </a>
                 <ul go-foreach="category.childs as child" name="sub">
-                    <li><a  href="{{ child.link }}">{{ child.name }}</a></li>
+                    <li><a href="{{ link(child.link) }}"><i class="fa {{ category.icon }}"></i><span>{{ child.name }}</span></a></li>
                 </ul>
             </li>
 

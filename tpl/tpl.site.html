@@ -6,17 +6,18 @@
             TOP BAR CONTENT & NOTIFICATIONS
             *********************************************************************************************************************************************************** -->
             <!--header start-->
+            <call:const.dashgum as="dashgum"></call:const.dashgum>
             <header class="header black-bg">
                 <div class="sidebar-toggle-box">
                     <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
                 </div>
                 <!--logo start-->
-                <a href="index.html" class="logo"><b>{{ title }}</b></a>
+                <a href="{{ link('/') }}" class="logo"><b>{{ dashgum.name }}</b></a>
                 <!--logo end-->
 
                 <div class="top-menu">
                     <ul class="nav pull-right top-menu">
-                        <li><a class="logout" href="login.html">Logout</a></li>
+                        <li><a class="logout" href="{{ link('/logout') }}">Logout</a></li>
                     </ul>
                 </div>
             </header>
@@ -36,7 +37,7 @@
             <section id="main-content">
                 <section class="wrapper site-min-height">
                     <go-output name="content"></go-output>
-                </section><! --/wrapper -->
+                </section>
             </section><!-- /MAIN CONTENT -->
 
             <!--main content end-->
