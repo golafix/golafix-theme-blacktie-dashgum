@@ -2,7 +2,7 @@
     <call:const.dashgum as="dashgum"></call:const.dashgum>
     <div class="text-center">
         {{ dashgum.copyright }}
-        <a href="#" class="go-top">
+        <a onclick='$("html, body").animate({ scrollTop: $(document).height() }, 200);' class="go-top">
             <i class="fa fa-angle-up"></i>
         </a>
     </div>
