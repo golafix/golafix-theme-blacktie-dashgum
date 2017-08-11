@@ -8,14 +8,14 @@ const.dashgum:
   name: "Name of System"
   copyright: "2017 - Some company"
 
-const.sidebar.navi:
-  - icon: "fa-home"
-    name: "Go Home"
-    link: ""
-    childs:
-      - icon: "fa-none"
-        name: "Show me more"
-        link: "#somewhat"
+#const.sidebar.navi:
+#  - icon: "fa-home"
+#    name: "Go Home"
+#    link: ""
+#    childs:
+#      - icon: "fa-none"
+#        name: "Show me more"
+#        link: "#somewhat"
 
 tpl.site.footer: "tpl/@@.html"
 tpl.site.htmlheadbody: "tpl/@@.html"
